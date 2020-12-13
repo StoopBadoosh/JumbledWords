@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <title>Jumbled Page</title>
+</head>
+<body>
+<div id="background">
+    <h1>Jumble a Word</h1>
+    <h4>Please Enter a Word in The Empty Box Then Click The Add Button</h4>
+</div>
+<form method="post">
+    <input type="text" placeholder="Please Enter a Word" name="input_for_jumbled_word1">
+    <input type="text" placeholder="Please Enter a Word" name="input_for_jumbled_word2">
+    <input type="text" placeholder="Please Enter a Word" name="input_for_jumbled_word3">
+    <input type="text" placeholder="Please Enter a Word" name="input_for_jumbled_word4">
+    <input type="text" placeholder="Please Enter a Word" name="input_for_jumbled_word5">
+    <input type="submit" value="Jumble"> <br>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <ul class="flashes">
+        {% for category, message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+</form>
+
+</body>
+</html>

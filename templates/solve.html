@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solve The Word</title>
+</head>
+<body>
+<form method="post">
+    <table>
+        {% for words in jumbled_words %}
+        <tr>
+            <td>
+                {{ words }}
+            </td>
+            <td>
+                <input type="text" placeholder="Guess The Word" name="guess">
+            </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td>
+                <input type="submit" value="check">
+            </td>
+        </tr>
+    </table>
+    <input name="original_words" type="text" value="{{original_words}}" hidden>
+</form>
+</body>
+</html>

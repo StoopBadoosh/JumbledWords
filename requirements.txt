@@ -1,0 +1,14 @@
+Flask
+Flask-Bootstrap
+Flask-PyMongo
+Jinja2
+MarkupSafe
+Werkzeug
+click
+dominate
+itsdangerous
+pip
+pymongo
+setuptools
+visitor
+dnspython
