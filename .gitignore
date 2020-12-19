@@ -1,2 +1,5 @@
 mongostring.txt
 secret_key.txt
+venv/
+.idea/
+__pycache__/

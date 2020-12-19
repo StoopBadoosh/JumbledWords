@@ -12,3 +12,4 @@ pymongo
 setuptools
 visitor
 dnspython
+gunicorn
